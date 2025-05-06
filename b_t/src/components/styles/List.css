@@ -114,7 +114,7 @@ body {
     color: #140431;
     text-shadow: #bb1a1a 2px 0vh 0px, #b6e548 -2px -0.0vh 0px;
     font-size: 9vh;
-    line-height: 35vh;
+    line-height: 9.2vh;
     text-align: center;
     font-style: italic;
     letter-spacing: -0.5vh;
@@ -126,7 +126,7 @@ body {
     top: -1vh;
     font-family: "Noto Sans", sans-serif;
     font-size: 2vh;
-    line-height: 2.7vh;
+    line-height: 2vh;
     font-weight: lighter;
     color: #396b46;
     letter-spacing: 0.1vh;
