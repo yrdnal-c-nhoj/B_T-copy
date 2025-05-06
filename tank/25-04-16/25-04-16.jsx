@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import "./25-04-16.css"; // Import the CSS file for styling
-import DigiBlankResp from "../../components/DigiBlankResp";
 
-const BirthdayCakeClock = () => {
+const Clock = () => {
     useEffect(() => {
         const hourHand = document.querySelector(".hour");
         const minuteHand = document.querySelector(".minute");
@@ -55,8 +54,8 @@ const BirthdayCakeClock = () => {
 
             <img src="/images/8ecccf93eef66cc83c09655a94880c1c_w200.webp" alt="" className="full-page-image" />
             <img src="/images/conf.jpg" alt="" className="full-page-image2" />
-            <DigiBlankResp />  </div>
+        </div>
     );
 };
 
-export default BirthdayCakeClock;
+export default Clock;
