@@ -1,8 +1,9 @@
 import Header from "./components/Header";
-import './components/styles/Header.css';
 import Footer from "./components/Footer";
-import './components/styles/Footer.css';
-// import Clock from "./pages/25-04-16/25-04-16";
+import Clock from "./pages/25-05-06/Clock";
+import "./pages/25-05-06/random.css";
+import "./styles/Footer.css";
+import "./styles/Header.css";
 
 
 function Today() {
@@ -10,11 +11,10 @@ function Today() {
         <div>
             <Header />
 
-            <h1>Today's  clock</h1>
 
-            {/* <Clock /> */}
 
-            <h1>Today's Clock!!!!!</h1>
+            <Clock />
+
 
             <Footer />
         </div>

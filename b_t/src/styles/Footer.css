@@ -12,19 +12,19 @@ a:hover {
 }
 
 .date-container {
-    color: #e51616;
+    color: #16e5de;
     position: absolute;
     bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
     width: 98%;
     display: flex;
-    /* justify-content: space-between; */
+
     z-index: 6;
 }
 
 .clockname {
-    font-family: "Titillium Web", sans-serif;
+    /* font-family: "Titillium Web", sans-serif; */
     font-weight: 400;
     position: fixed;
     left: 50%;
@@ -42,7 +42,7 @@ a:hover {
 
 .dateright {
     font-size: 3vh;
-    font-family: "Nanum Gothic Coding", monospace;
+    /* font-family: "Nanum Gothic Coding", monospace; */
     position: absolute;
     right: 0;
 }

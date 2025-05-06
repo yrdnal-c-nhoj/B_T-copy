@@ -22,9 +22,8 @@ export default function GetList() {
                 links.map((link, i) => (
                     <li key={i}>
                         <div className='label'>
-
                             <Link to={link.path}>
-                                <span className="date">{link.date}</span>xxxxx
+                                <span className="date">{link.date}</span>.
                                 <span className="label-text">{link.label}</span>
                             </Link>
                         </div>
