@@ -1,0 +1,16 @@
+body {
+    background-image: url('../../assets/25-04-16/jhgh.webp');
+    /* filter: saturate(0.2); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.clock {
+    color: rgb(250, 10, 66);
+    text-shadow: 22px 11px 5px rgb(255, 255, 254);
+    font-size: 4rem;
+    text-align: center;
+    /* margin-top: 20px; */
+}
