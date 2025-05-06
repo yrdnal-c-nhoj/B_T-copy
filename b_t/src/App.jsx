@@ -8,12 +8,8 @@ import Today from './Today';
 function App() {
     return (
         <Routes>
-
-            {/* <Route path="/" element={<HomePage />} /> */}
-
             <Route path="/today" element={<Today />} />
             <Route path="/" element={<List />} />
-            <Route path="/" element={<Today />} />
             <Route path="/about" element={<About />} />
         </Routes>
     );
