@@ -9,11 +9,11 @@ function Today() {
     return (
         <div>
             <Header />
-            <DigitClock />
-            <GetList />
+            {/* <DigitClock /> */}
+            {/* <GetList /> */}
             <h1>Today's  clock</h1>
 
-            <DigitClock />
+            {/* <DigitClock /> */}
 
             <h1>Today's Clock!!!!!</h1>
 
