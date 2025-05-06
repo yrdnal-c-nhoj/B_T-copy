@@ -149,14 +149,14 @@ body {
 .date {
     position: relative;
     font-family: "Nanum Gothic Coding", monospace;
-    font-size: 1vh;
+    font-size: 3vh;
     letter-spacing: 0.3vh;
 
 }
 
 .label-text {
     position: relative;
-    font-size: 1vh;
+    font-size: 3vh;
     /* line-height: -11vh; */
     letter-spacing: 0.05vh;
 }
