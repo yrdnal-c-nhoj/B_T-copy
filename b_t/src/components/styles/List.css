@@ -114,7 +114,7 @@ body {
     color: #140431;
     text-shadow: #bb1a1a 2px 0vh 0px, #b6e548 -2px -0.0vh 0px;
     font-size: 9vh;
-    line-height: 8.5vh;
+    line-height: 35vh;
     text-align: center;
     font-style: italic;
     letter-spacing: -0.5vh;
@@ -146,7 +146,6 @@ body {
 
 .date {
     position: relative;
-
     font-family: "Nanum Gothic Coding", monospace;
     font-size: 3.5vh;
     letter-spacing: 0.3vh;
@@ -155,22 +154,7 @@ body {
 
 .label-text {
     position: relative;
-
     font-size: 3vh;
     line-height: 4vh;
     letter-spacing: 0.05vh;
 }
-
-/* 
-.label {
-    font-size: 3vh;
-} */
-
-/* 
-.date {
-                                                    
-    font-family: "Nanum Gothic Coding", monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3vh;
-} */
