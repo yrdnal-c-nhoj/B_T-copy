@@ -6,17 +6,17 @@ body {
     padding: 0;
     height: auto;
     overflow-y: auto;
-    animation: colorFade 90s infinite;
+    animation: colorFade 45s infinite;
     transition: background-color 5s ease;
 }
 
 @keyframes colorFade {
     0% {
-        background-color: rgb(243, 228, 228);
+        background-color: rgb(242, 235, 235);
     }
 
     14% {
-        background-color: rgb(232, 225, 211);
+        background-color: rgb(224, 237, 193);
     }
 
     28% {
@@ -24,7 +24,7 @@ body {
     }
 
     42% {
-        background-color: rgb(213, 235, 213);
+        background-color: rgb(227, 208, 210);
     }
 
     57% {
@@ -32,7 +32,7 @@ body {
     }
 
     71% {
-        background-color: rgb(230, 221, 236);
+        background-color: rgb(233, 218, 243);
     }
 
     85% {
@@ -40,7 +40,7 @@ body {
     }
 
     100% {
-        background-color: rgb(233, 213, 213);
+        background-color: rgb(252, 243, 243);
     }
 }
 
@@ -87,7 +87,7 @@ body {
 }
 
 .Lheader {
-    color: #072d5b;
+    color: #3668a4;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,7 +96,10 @@ body {
 }
 
 .Lchltitle {
+    position: relative;
+    left: 5px;
     font-family: "Roboto Slab", serif;
+    font-weight: bold;
     font-size: 2.8vh;
     letter-spacing: 0.2vh;
 }
@@ -157,4 +160,14 @@ body {
     position: relative;
     font-size: 3vh;
     letter-spacing: 0.05vh;
+}
+
+.copyright {
+    position: absolute;
+    right: 12px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 2vh;
+    color: rgb(152, 148, 148);
+    text-align: right;
+    /* margin-top: 4vh; */
 }

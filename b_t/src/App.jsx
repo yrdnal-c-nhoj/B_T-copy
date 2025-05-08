@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import List from './List';
 import About from './About';
 import Today from './Today';
+import NotFound from './NotFound'; // Import your error page
 
 function App() {
     return (
@@ -11,10 +12,9 @@ function App() {
             <Route path="/today" element={<Today />} />
             <Route path="/" element={<List />} />
             <Route path="/about" element={<About />} />
+            <Route path="*" element={<NotFound />} /> {/* Catch-all route */}
         </Routes>
     );
 }
 
 export default App;
-
-

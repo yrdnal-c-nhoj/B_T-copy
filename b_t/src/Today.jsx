@@ -10,12 +10,7 @@ function Today() {
     return (
         <div>
             <Header />
-
-
-
             <Clock />
-
-
             <Footer />
         </div>
     );
@@ -23,3 +18,5 @@ function Today() {
 }
 
 export default Today;
+
+
