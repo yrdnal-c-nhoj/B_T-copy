@@ -13,36 +13,34 @@ a:hover {
 
 .date-container {
     color: #16e5de;
-    position: absolute;
     bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
     width: 98%;
     display: flex;
-
     z-index: 6;
 }
 
 .clockname {
-    /* font-family: "Titillium Web", sans-serif; */
+    position: absolute;
+    font-family: "Oxanium", serif;
     font-weight: 400;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     font-size: 4vh;
-    line-height: 3.5vh;
 }
 
 .dateleft {
+    position: absolute;
     font-size: 3vh;
     font-family: "Nanum Gothic Coding", monospace;
-    position: relative;
     left: 0;
 }
 
 .dateright {
-    font-size: 3vh;
-    /* font-family: "Nanum Gothic Coding", monospace; */
     position: absolute;
+    font-size: 3vh;
+    font-family: "Nanum Gothic Coding", monospace;
     right: 0;
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap');
 
-html,
+/* html,
 body {
     margin: 0;
     padding: 0;
@@ -42,8 +42,10 @@ body {
     100% {
         background-color: rgb(252, 243, 243);
     }
-}
+} */
 
+
+/* 
 .full-page-image,
 .full-page-image2,
 .full-page-image3 {
@@ -72,11 +74,13 @@ body {
     background-size: 20vw 16vw;
     opacity: 0.1;
     z-index: 3;
-}
+} */
+
+
+
 
 .Lmotto {
     position: absolute;
-    /* top: 1px; */
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-style: normal;

@@ -10,8 +10,8 @@ function App() {
     return (
         <Routes>
             <Route path="/today" element={<Today />} />
-            <Route path="/" element={<List />} />
             <Route path="/about" element={<About />} />
+            <Route path="/" element={<List />} />
             <Route path="*" element={<NotFound />} /> {/* Catch-all route */}
         </Routes>
     );
