@@ -74,8 +74,9 @@ body {
     z-index: 3;
 }
 
-
 .Lmotto {
+    position: absolute;
+    /* top: 1px; */
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -83,10 +84,13 @@ body {
     font-size: 1.3vh;
     letter-spacing: 0.5vh;
     text-align: center;
+    width: 100%;
     background-color: #eadfc2;
 }
 
 .Lheader {
+    position: relative;
+    top: 0px;
     color: #3668a4;
     display: flex;
     justify-content: space-between;
@@ -164,10 +168,12 @@ body {
 
 .copyright {
     position: absolute;
-    right: 12px;
+    bottom: -0.1rem;
+    right: 0.1rem;
     font-family: "Noto Sans", sans-serif;
-    font-size: 2vh;
-    color: rgb(152, 148, 148);
+    font-size: 0.5rem;
+    line-height: 0.6rem;
+    color: rgb(196, 191, 191);
     text-align: right;
     /* margin-top: 4vh; */
 }

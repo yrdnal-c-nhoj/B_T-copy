@@ -1,5 +1,5 @@
 import React from 'react';
-import GetList from './GetList';
+import GetList from '../utils/GetList';
 
 function Footer() {
     return (

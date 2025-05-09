@@ -1,4 +1,4 @@
-import CurrentDate from "./CurrentDate";
+import CurrentDate from "../utils/CurrentDate";
 
 function LHeader() {
     return (

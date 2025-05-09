@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQc5qURFR9zL6d4ej5hbP4-XBd8k9SYHTYdOrxgDAWhQ6MCzDj-xPk3di8ymvXoJ8CfsQ3MctWs_PyF/pub?gid=0&single=true&output=csv';
 
-export default function GetList() {
+function GetList() {
     const [links, setLinks] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -54,3 +54,4 @@ export default function GetList() {
         </ul>
     );
 }
+export default GetList;

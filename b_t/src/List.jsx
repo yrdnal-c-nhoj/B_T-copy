@@ -1,13 +1,15 @@
 
-import GetList from "./components/GetList";
-import LHeader from "./components/LHeader";
+import GetList from "./utils/GetList"
+import ListHeader from "./components/ListHeader";
 import Copyright from "./components/Copyright";
 import "./styles/List.css";
 
-export default function List() {
+function List() {
     return <div>
-        <LHeader />
+        <ListHeader />
         <GetList />
         <Copyright />
     </div>;
 }
+
+export default List;
