@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap');
 
-/* html,
+html,
 body {
     margin: 0;
     padding: 0;
@@ -10,174 +10,138 @@ body {
     transition: background-color 5s ease;
 }
 
-@keyframes colorFade {
-    0% {
-        background-color: rgb(242, 235, 235);
-    }
-
-    14% {
-        background-color: rgb(224, 237, 193);
-    }
-
-    28% {
-        background-color: rgb(242, 242, 221);
-    }
-
-    42% {
-        background-color: rgb(227, 208, 210);
-    }
-
-    57% {
-        background-color: rgb(229, 229, 249);
-    }
-
-    71% {
-        background-color: rgb(233, 218, 243);
-    }
-
-    85% {
-        background-color: rgb(239, 215, 239);
-    }
-
-    100% {
-        background-color: rgb(252, 243, 243);
-    }
-} */
-
-
-/* 
-.full-page-image,
-.full-page-image2,
-.full-page-image3 {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-repeat: repeat;
-    background-position: center;
-    pointer-events: none;
-
-}
-
-.full-page-image {
-    background-size: 22vw 18vw;
-    opacity: 0.15;
-    z-index: 5;
-}
-
-.full-page-image2 {
-    background-size: 21vw 17vw;
-    opacity: 0.1;
-    z-index: 4;
-}
-
-.full-page-image3 {
-    background-size: 20vw 16vw;
-    opacity: 0.1;
-    z-index: 3;
-} */
-
-
-
-
 .Lmotto {
-    position: absolute;
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: rgba(150, 118, 29, 0.877);
-    font-size: 1.3vh;
-    letter-spacing: 0.5vh;
+    color: rgba(167, 134, 46, 0.877);
+    font-size: clamp(0.4rem, 1.7vw, 0.6rem);
+    letter-spacing: 0.15rem;
     text-align: center;
     width: 100%;
-    background-color: #eadfc2;
+    background-color: #efe9d8;
 }
 
-.Lheader {
-    position: relative;
-    top: 0px;
-    color: #3668a4;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #c7edc7;
-    line-height: 0px;
-}
 
 .Lchltitle {
-    position: relative;
-    left: 5px;
     font-family: "Roboto Slab", serif;
     font-weight: bold;
-    font-size: 2.8vh;
-    letter-spacing: 0.2vh;
+    font-size: clamp(0.7rem, 2vw, 1rem);
+    letter-spacing: 0.05rem;
+    background-color: #e0e3e0;
+    padding: 0.1rem;
 }
 
+/* 
 .Ldate {
     font-family: "Nanum Gothic Coding", monospace;
-    font-size: 3.0vh;
-    letter-spacing: 0.3vh;
-}
+    font-size: clamp(0.7rem, 2vw, 1rem);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+} */
 
 .Lbttitle {
     font-family: "Oxanium", sans-serif;
     color: #1e044e;
-    text-shadow: #bb1a1a 2px 0vh 0px, #b6e548 -2px -0.0vh 0px;
-    font-size: 9vh;
-    line-height: 9.2vh;
+    text-shadow: #bb1a1a 2px 0 0, #b6e548 -2px 0 0;
+    font-size: clamp(2rem, 8vw, 3.0rem);
+    line-height: 1.2;
     text-align: center;
     font-style: italic;
-    letter-spacing: -0.5vh;
+    letter-spacing: -0.1rem;
 }
 
 .Lbt_newclockeveryday {
-    position: relative;
-    top: -1vh;
     font-family: "Noto Sans", sans-serif;
-    font-size: 2vh;
-    line-height: 2vh;
-    font-weight: lighter;
-    color: #396b46;
-    letter-spacing: 0.1vh;
+    font-size: clamp(0.6rem, 1.2vw, 0.8rem);
+    line-height: 1.1;
+    color: #68806f;
+    letter-spacing: 0.005rem;
     text-align: center;
     font-style: italic;
     background-color: #e3e6eb;
-}
-
-.no-dots {
-    list-style-type: none;
-    color: #412c2c;
-    font-family: "Noto Sans", sans-serif;
-    text-align: left;
-    padding: -20;
-    margin: 0;
-    max-height: 80vh;
-    overflow-y: auto;
-    background-color: rgb(188, 192, 191);
-}
-
-
-.date {
-    position: relative;
-    font-family: "Nanum Gothic Coding", monospace;
-    font-size: 3vh;
-    letter-spacing: 0.3vh;
-
-}
-
-.label-text {
-    position: relative;
-    font-size: 3vh;
-    letter-spacing: 0.05vh;
+    padding: 0.3rem;
 }
 
 .copyright {
-    position: absolute;
-    bottom: -0.1rem;
-    right: 0.1rem;
     font-family: "Noto Sans", sans-serif;
-    font-size: 0.5rem;
-    line-height: 0.6rem;
-    color: rgb(196, 191, 191);
+    font-size: clamp(0.4rem, 1vw, 0.6rem);
+    line-height: 1;
+    color: rgb(118, 115, 115);
     text-align: right;
-    /* margin-top: 4vh; */
+    padding: 0.3rem 0.5rem;
+}
+
+/* LINKS */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ecdaea;
+    background-color: rgb(107, 97, 28);
+    text-decoration: none;
+}
+
+.clock-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+ul.clock-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.clock-list-item {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px dotted #769b60;
+}
+
+.clock-title {
+    font-family: "Noto Sans", sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+.clock-date {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    margin-left: auto;
+    white-space: nowrap;
+    text-align: right;
+}
+
+/* RESPONSIVE STACKING FOR MOBILE */
+
+@media (max-width: 600px) {
+    .Lheader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .clock-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .clock-date {
+        margin-left: 0;
+        margin-top: 0.3rem;
+        align-self: flex-end;
+        text-align: right;
+    }
 }

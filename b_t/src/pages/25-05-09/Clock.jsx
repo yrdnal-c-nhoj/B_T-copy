@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Whirlpool.css';
-import '../../styles/Footer.css'
+
 
 const Clock = () => {
     useEffect(() => {
@@ -48,15 +48,10 @@ const Clock = () => {
 
     return (
         <div>
-            <img
-                src="./images/9713a796e0c6dfcd83461fa5c16c8984.gif"
+            <img src="./images/"
                 className="bgimage"
                 alt="background"
             />
-            <div className="title-container">
-                <div className="chltitle">Cubist Heart Laboratories</div>
-                <div className="bttitle">BorrowedTime</div>
-            </div>
 
             <div className="date-container">
                 <a href="/" className="clockname">Whirlpool Clock</a>

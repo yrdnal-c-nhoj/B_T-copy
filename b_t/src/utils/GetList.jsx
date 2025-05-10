@@ -36,22 +36,21 @@ function GetList() {
             });
     }, []);
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <p>clock is ticking...</p>;
     if (error) return <p className="error">{error}</p>;
 
     return (
-        <ul className="no-dots link-list">
+        <ul className="clock-list">
             {links.map((link, i) => (
-                <li key={i}>
-                    <div className="label">
-                        <Link to={link.path}>
-                            <span className="date">{link.date}</span>.
-                            <span className="label-text"> {link.label}</span>
-                        </Link>
-                    </div>
+                <li className="clock-list-item" key={i}>
+                    <Link to={link.path} className="clock-link">
+                        <span className="clock-title">{link.label}</span>
+                        <span className="clock-date">{link.date}</span>
+                    </Link>
                 </li>
             ))}
         </ul>
     );
 }
+
 export default GetList;

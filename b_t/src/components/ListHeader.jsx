@@ -11,18 +11,17 @@ function LHeader() {
                 <div className="Lchltitle">
                     Cubist Heart Laboratories
                 </div>
-                <div className="Ldate">
+                {/* <div className="Ldate">
                     <CurrentDate />
-                </div>
+                </div> */}
             </div>
+
             <div className="Lbttitle">
                 BorrowedTime</div>
             <div className="Lbt_newclockeveryday">
                 a new clock every day
             </div>
-
         </div>
-
 
     );
 }
