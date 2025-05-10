@@ -56,7 +56,7 @@ body {
 .Lbt_newclockeveryday {
     font-family: "Noto Sans", sans-serif;
     font-size: clamp(0.6rem, 1.0vh, 0.8rem);
-    line-height: 0;
+    line-height: 0.3rem;
     color: #68806f;
     letter-spacing: 0.01rem;
     text-align: center;
