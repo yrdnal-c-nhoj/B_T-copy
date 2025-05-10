@@ -9,9 +9,9 @@ import NotFound from './NotFound'; // Import your error page
 function App() {
     return (
         <Routes>
-            <Route path="/" element={<Today />} />
+            <Route path="/today" element={<Today />} />
             <Route path="/about" element={<About />} />
-            <Route path="/today" element={<List />} />
+            <Route path="/" element={<List />} />
             <Route path="*" element={<NotFound />} /> {/* Catch-all route */}
         </Routes>
     );
