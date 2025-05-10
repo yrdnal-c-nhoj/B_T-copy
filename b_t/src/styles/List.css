@@ -23,19 +23,12 @@
     padding: 0.1rem;
 }
 
-/* 
-.Ldate {
-    font-family: "Nanum Gothic Coding", monospace;
-    font-size: clamp(0.7rem, 2vw, 1rem);
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-} */
 
 .Lbttitle {
     font-family: "Oxanium", sans-serif;
     color: #1e044e;
     text-shadow: #bb1a1a 2px 0 0, #b6e548 -2px 0 0;
-    font-size: clamp(2rem, 9vh, 3.0rem);
+    font-size: clamp(2rem, 3vh, 3.0rem);
     /* line-height: 1.2; */
     text-align: center;
     font-style: italic;
