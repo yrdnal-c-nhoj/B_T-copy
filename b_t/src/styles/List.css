@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap');
 
 .Lmotto {
-    font-family: "Cinzel", serif;
+    /* font-family: "Cinzel", serif; */
     /* font-optical-sizing: auto;
     font-style: normal; */
-    color: rgba(209, 209, 104, 0.877);
-    font-size: 0.01vh;
+    color: rgba(21, 21, 17, 0.877);
+    font-size: 0.3vh;
     letter-spacing: 0.1rem;
     text-align: center;
     width: 100%;
@@ -23,14 +23,20 @@
     padding: 0.1rem;
 }
 
+/* 
+.Ldate {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-size: clamp(0.7rem, 2vw, 1rem);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+} */
 
 .Lbttitle {
     font-family: "Oxanium", sans-serif;
     color: #1e044e;
     text-shadow: #bb1a1a 2px 0 0, #b6e548 -2px 0 0;
-    /* font-size: clamp(2rem, 3vh, 3.0rem); */
+    font-size: clamp(2rem, 9vh, 3.0rem);
     /* line-height: 1.2; */
-    font-size: 0.1vh;
     text-align: center;
     font-style: italic;
     letter-spacing: -0.1rem;
