@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e8ecec;
+    background-color: rgb(21, 0, 255);
+    text-decoration: none;
+}
+
+.date-container {
+    color: #16e5de;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 98%;
+    display: flex;
+    z-index: 6;
+}
+
+.clockname {
+    position: absolute;
+    font-family: "Oxanium", serif;
+    font-weight: 400;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4vh;
+}
+
+.dateleft {
+    position: absolute;
+    font-size: 3vh;
+    font-family: "Nanum Gothic Coding", monospace;
+    left: 0;
+}
+
+.dateright {
+    position: absolute;
+    font-size: 3vh;
+    font-family: "Nanum Gothic Coding", monospace;
+    right: 0;
+}
