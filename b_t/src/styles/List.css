@@ -15,7 +15,7 @@ body {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: rgba(201, 170, 86, 0.877);
+    color: rgba(95, 83, 49, 0.877);
     font-size: clamp(0.4rem, 1.2vw, 0.6rem);
     letter-spacing: 0.15rem;
     text-align: center;
