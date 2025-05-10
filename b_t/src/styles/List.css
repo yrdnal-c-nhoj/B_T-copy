@@ -4,7 +4,7 @@
     font-family: "Cinzel", serif;
     /* font-optical-sizing: auto;
     font-style: normal; */
-    color: rgba(21, 21, 17, 0.877);
+    color: rgba(209, 209, 104, 0.877);
     font-size: 0.01vh;
     letter-spacing: 0.1rem;
     text-align: center;
@@ -28,8 +28,9 @@
     font-family: "Oxanium", sans-serif;
     color: #1e044e;
     text-shadow: #bb1a1a 2px 0 0, #b6e548 -2px 0 0;
-    font-size: clamp(2rem, 3vh, 3.0rem);
+    /* font-size: clamp(2rem, 3vh, 3.0rem); */
     /* line-height: 1.2; */
+    font-size: 0.1vh;
     text-align: center;
     font-style: italic;
     letter-spacing: -0.1rem;
