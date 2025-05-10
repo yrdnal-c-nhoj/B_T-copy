@@ -74,7 +74,6 @@ body {
     padding: 0.3rem 0.5rem;
 }
 
-/* LINKS */
 
 a {
     color: inherit;
@@ -83,7 +82,7 @@ a {
 
 a:hover {
     color: #ecdaea;
-    background-color: rgb(107, 97, 28);
+    background-color: rgb(34, 2, 20);
     text-decoration: none;
 }
 
@@ -106,12 +105,12 @@ ul.clock-list {
     width: 100%;
     /* padding: 10px; */
     box-sizing: border-box;
-    border-top: 1px dotted #769b60;
+    border-top: 0.3vh dotted #0b1803;
 }
 
 .clock-title {
     font-family: "Noto Sans", sans-serif;
-    font-size: clamp(1rem, 3.0vh, 1.2rem);
+    font-size: clamp(1rem, 2.0vh, 1.2rem);
     flex-grow: 1;
     flex-shrink: 1;
     min-width: 0;
@@ -121,7 +120,7 @@ ul.clock-list {
 
 .clock-date {
     font-family: "Nanum Gothic Coding", monospace;
-    font-size: clamp(1rem, 2.5vh, 1.2rem);
+    font-size: clamp(1rem, 2.0vh, 1.2rem);
     margin-left: auto;
     white-space: nowrap;
     text-align: right;

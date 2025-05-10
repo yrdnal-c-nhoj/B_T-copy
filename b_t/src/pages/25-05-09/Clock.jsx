@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import './Whirlpool.css';
+import swurl from './../../assets/swurl.gif'
+
 
 
 const Clock = () => {
@@ -47,11 +49,9 @@ const Clock = () => {
     }, []);
 
     return (
-        <div>
-            <img src="./images/"
-                className="bgimage"
-                alt="background"
-            />
+        <div><img src={swurl} className="bgimage" alt="Swirling background" />
+
+
 
             <div className="date-container">
                 <a href="/" className="clockname">Whirlpool Clock</a>
