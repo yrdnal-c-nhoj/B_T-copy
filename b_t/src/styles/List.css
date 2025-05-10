@@ -8,27 +8,29 @@ body {
     overflow-y: auto;
     animation: colorFade 45s infinite;
     transition: background-color 5s ease;
+    /* font-size: 4vh; */
 }
 
 .Lmotto {
     font-family: "Cinzel", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: rgba(167, 134, 46, 0.877);
-    font-size: clamp(0.4rem, 1.7vw, 0.6rem);
-    letter-spacing: 0.15rem;
+    color: rgba(201, 170, 86, 0.877);
+    font-size: clamp(0.4rem, 1.5vw, 0.6rem);
+    letter-spacing: 0.2rem;
     text-align: center;
     width: 100%;
-    background-color: #efe9d8;
+    background-color: #f2f2f0;
 }
 
 
 .Lchltitle {
     font-family: "Roboto Slab", serif;
     font-weight: bold;
+    color: #6e8172;
     font-size: clamp(0.7rem, 2vw, 1rem);
     letter-spacing: 0.05rem;
-    background-color: #e0e3e0;
+    background-color: #f5f9f5;
     padding: 0.1rem;
 }
 
@@ -44,8 +46,8 @@ body {
     font-family: "Oxanium", sans-serif;
     color: #1e044e;
     text-shadow: #bb1a1a 2px 0 0, #b6e548 -2px 0 0;
-    font-size: clamp(2rem, 8vw, 3.0rem);
-    line-height: 1.2;
+    font-size: clamp(2rem, 9vh, 3.0rem);
+    /* line-height: 1.2; */
     text-align: center;
     font-style: italic;
     letter-spacing: -0.1rem;
@@ -53,13 +55,13 @@ body {
 
 .Lbt_newclockeveryday {
     font-family: "Noto Sans", sans-serif;
-    font-size: clamp(0.6rem, 1.2vw, 0.8rem);
-    line-height: 1.1;
+    font-size: clamp(0.6rem, 1.0vh, 0.8rem);
+    line-height: 0;
     color: #68806f;
-    letter-spacing: 0.005rem;
+    letter-spacing: 0.01rem;
     text-align: center;
     font-style: italic;
-    background-color: #e3e6eb;
+    background-color: #fdfefe;
     padding: 0.3rem;
 }
 
@@ -102,14 +104,14 @@ ul.clock-list {
 .clock-list-item {
     display: flex;
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
     box-sizing: border-box;
-    border-bottom: 1px dotted #769b60;
+    border-top: 1px dotted #769b60;
 }
 
 .clock-title {
     font-family: "Noto Sans", sans-serif;
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-size: clamp(1rem, 3.0vh, 1.2rem);
     flex-grow: 1;
     flex-shrink: 1;
     min-width: 0;
@@ -119,7 +121,7 @@ ul.clock-list {
 
 .clock-date {
     font-family: "Nanum Gothic Coding", monospace;
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-size: clamp(1rem, 2.5vh, 1.2rem);
     margin-left: auto;
     white-space: nowrap;
     text-align: right;
@@ -139,8 +141,8 @@ ul.clock-list {
     }
 
     .clock-date {
-        margin-left: 0;
-        margin-top: 0.3rem;
+        /* margin-left: 0;
+        margin-top: 0.3rem; */
         align-self: flex-end;
         text-align: right;
     }
