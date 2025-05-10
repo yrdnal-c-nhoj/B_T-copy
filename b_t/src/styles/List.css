@@ -13,8 +13,8 @@ body {
 
 .Lmotto {
     font-family: "Cinzel", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    /* font-optical-sizing: auto;
+    font-style: normal; */
     color: rgba(195, 13, 83, 0.877);
     font-size: clamp(0.01rem, 0.5vw, 0.6rem);
     letter-spacing: 0.1rem;
