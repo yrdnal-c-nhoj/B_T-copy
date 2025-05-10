@@ -5,7 +5,7 @@ function LHeader() {
 
         <div>
             <div className="Lmotto">
-                PLUS⬩ARS⬩CITIUS⬩OMNI⬩TEMPORE⬩NAM⬩QUISQUE*
+                PLUS⟡ARS⟡CITIUS⟡OMNI⟡TEMPORE⟡NAM⟡QUISQUE*
             </div>
             <div className="Lheader">
                 <div className="Lchltitle">
