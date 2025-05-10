@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap');
-/* 
-html,
+
+/* html,
 body {
     margin: 0;
     padding: 0;
     height: auto;
     overflow-y: auto;
-    animation: colorFade 45s infinite;
-    transition: background-color 5s ease;
-    /* font-size: 4vh; */
+    /* animation: colorFade 45s infinite;
+    transition: background-color 5s ease; */
+/* font-size: 4vh; */
 }
 
-*/ .Lmotto {
+*/ */ .Lmotto {
     font-family: "Cinzel", serif;
     /* font-optical-sizing: auto;
     font-style: normal; */
