@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Whirlpool.css';
-import swurl from './../../assets/swurl.gif'
+import swurl from './swurl.gif'
 
 
 
