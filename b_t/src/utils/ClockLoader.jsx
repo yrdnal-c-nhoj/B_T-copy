@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 
-// 1. Use Vite's glob import to get all Clock.jsx modules
+// Import all Clock.jsx modules from one level up: src/pages/*/
 const clockModules = import.meta.glob('../pages/*/Clock.jsx');
 
 function getTodayFolder() {
     const now = new Date();
-    // Format as 'YY-MM-DD'
     const pad = n => n.toString().padStart(2, '0');
     const year = now.getFullYear().toString().slice(-2);
     const month = pad(now.getMonth() + 1);
@@ -14,11 +13,11 @@ function getTodayFolder() {
 }
 
 function getSortedFolders(modules) {
-    // Extract folder names from paths like './pages/25-05-09/Clock.jsx'
+    // Extract folder names from paths like '../pages/25-05-09/Clock.jsx'
     return Object.keys(modules)
         .map(path => ({
             path,
-            folder: path.match(/\.\/pages\/([^/]+)\//)[1],
+            folder: path.match(/\/pages\/([^/]+)\//)[1],
         }))
         .sort((a, b) => b.folder.localeCompare(a.folder));
 }
@@ -30,7 +29,6 @@ export default function ClockLoader() {
         const today = getTodayFolder();
         const sorted = getSortedFolders(clockModules);
 
-        // Find the first folder that is today or before
         const found = sorted.find(({ folder }) => folder <= today);
 
         if (found) {
@@ -40,6 +38,5 @@ export default function ClockLoader() {
         }
     }, []);
 
-    if (!Component) return <div>Loading...</div>;
-    return <Component />;
+    return Component ? <Component /> : <div>Loading clock...</div>;
 }

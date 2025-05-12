@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './Whirlpool.css';
 import swurl from './swurl.gif'
+im
 
 const Clock = () => {
     useEffect(() => {

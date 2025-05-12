@@ -1,6 +1,7 @@
-// src/CheetahClock.jsx
+
 import React, { useEffect } from 'react';
 import './Cheetah.css'; // Externalize styles if you prefer
+import A3ui from './A3ui.gif';
 
 const Clock = () => {
     useEffect(() => {
@@ -37,18 +38,13 @@ const Clock = () => {
 
     return (
         <div className="cheetah-body">
-            <div className="title-container">
-                <div className="chltitle">Cubist Heart Laboratories</div>
-                <div className="bttitle">BorrowedTime</div>
-            </div>
+
 
             <div className="date-container">
-                <a href="../aquarium/" className="dates dateleft">05/11/25</a>
                 <a href="../index.html" className="clockname">Cheetah</a>
-                <a href="../index.html" className="dates dateright">05/13/25</a>
             </div>
 
-            <img src="/A3ui.gif" alt="Background" className="bgimage" />
+            <img src={A3ui} alt="Background" className="bgimage" />
 
             <div className="clock" id="clock">
                 <div className="digit-box" id="h1"></div>
