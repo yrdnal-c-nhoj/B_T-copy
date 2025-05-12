@@ -36,7 +36,7 @@ function GetList() {
             });
     }, []);
 
-    if (loading) return <p>clock is ticking...</p>;
+    if (loading) return <p>...tick...tick...tick...</p>;
     if (error) return <p className="error">{error}</p>;
 
     return (
