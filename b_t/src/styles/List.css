@@ -1,26 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Nanum+Gothic+Coding:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap');
 
 .Lmotto {
-    /* font-family: "Cinzel", serif; */
-    /* font-optical-sizing: auto;
-    font-style: normal; */
-    color: rgba(21, 21, 17, 0.877);
-    font-size: 0.3vh;
-    letter-spacing: 0.1rem;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgba(160, 127, 28, 0.877);
+    font-size: 1.2vh;
+    letter-spacing: 0.6vh;
     text-align: center;
     width: 100%;
-    background-color: #f2f2f0;
+    background-color: (206, 189, 94);
+    background: linear-gradient(69deg, rgb(237, 210, 137) 0%, rgb(244, 234, 180) 43%, rgb(224, 206, 151) 100%);
 }
 
 
 .Lchltitle {
     font-family: "Roboto Slab", serif;
     font-weight: bold;
-    color: #6e8172;
-    font-size: clamp(0.7rem, 2vw, 1rem);
-    letter-spacing: 0.05rem;
-    background-color: #f5f9f5;
-    padding: 0.1rem;
+    color: #91a996;
+    font-size: clamp(0.1rem, 3.2vh, 2.2rem);
+    letter-spacing: 0.15vh;
+    background-color: #c8e1c8;
+    padding: 0.2rem;
+    width: 100%;
 }
 
 /* 

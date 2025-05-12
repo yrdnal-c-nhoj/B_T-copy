@@ -43,8 +43,7 @@ function GetList() {
         <ul className="clock-list">
             {links.map((link, i) => (
                 <li className="clock-list-item" key={i}>
-                    <Link to={link.path} className="clock-link">
-                        <span className="clock-title">{link.label}</span>
+                    <Link to={`../pages/${link.path}`} className="clock-link">                        <span className="clock-title">{link.label}</span>
                         <span className="clock-date">{link.date}</span>
                     </Link>
                 </li>

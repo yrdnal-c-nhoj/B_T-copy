@@ -18,9 +18,14 @@ function LHeader() {
 
             <div className="Lbttitle">
                 BorrowedTime</div>
+
+
+
             <div className="Lbt_newclockeveryday">
-                a new clock every day
+                a needlessly computationally intensive new clock every day
             </div>
+
+
         </div>
 
     );
