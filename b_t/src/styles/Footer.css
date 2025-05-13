@@ -12,35 +12,40 @@ a:hover {
 }
 
 .date-container {
-    color: #16e5de;
-    bottom: 5px;
+    position: fixed;
+    /* Stick to the screen */
+    bottom: 0;
+    /* Stick to the bottom */
     left: 50%;
+    /* Center horizontally */
     transform: translateX(-50%);
     width: 98%;
     display: flex;
+    justify-content: space-between;
+    /* optional: space out children */
+    align-items: center;
+    /* optional: vertically align children */
     z-index: 6;
+    padding: 5px;
+    /* optional: adds some spacing */
+    box-sizing: border-box;
+    /* ensures padding doesn't mess with width */
 }
 
 .clockname {
-    position: absolute;
     font-family: "Oxanium", serif;
     font-weight: 400;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 4vh;
+    text-align: center;
+    flex-grow: 1;
 }
 
 .dateleft {
-    position: absolute;
     font-size: 3vh;
     font-family: "Nanum Gothic Coding", monospace;
-    left: 0;
 }
 
 .dateright {
-    position: absolute;
     font-size: 3vh;
     font-family: "Nanum Gothic Coding", monospace;
-    right: 0;
 }

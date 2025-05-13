@@ -5,7 +5,7 @@ import "./styles/Footer.css";
 import "./styles/Header.css";
 
 
-function Today() {
+function ClockPage() {
     return (
         <div>
             <Header />
