@@ -1,0 +1,121 @@
+ body {
+     /* background-image: url('../../assets/25-04-16/cake.png'); */
+     margin: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     overflow: hidden;
+     background-color: chartreuse;
+ }
+
+ .clock-wrapper {
+     position: relative;
+     width: 80vmin;
+     aspect-ratio: 1 / 1;
+ }
+
+
+ .clock {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     filter: saturate(1.6);
+     /* border-radius: 50%; */
+     z-index: 9;
+ }
+
+ .hand {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     transform-origin: center center;
+     pointer-events: none;
+
+ }
+
+ .hand img {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -100%);
+ }
+
+ .hour img {
+     height: 34vh;
+     z-index: 9;
+     filter: contrast(120%) brightness(100%);
+ }
+
+ .minute img {
+     height: 44vh;
+     z-index: 6;
+ }
+
+ .second img {
+     height: 55vh;
+     filter: brightness(120%);
+ }
+
+ @keyframes rotateCounterClockwise {
+     from {
+         transform: rotate(0deg);
+     }
+
+     to {
+         transform: rotate(-360deg);
+     }
+ }
+
+ .circle {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 110%;
+     height: 110%;
+     border-radius: 50%;
+     animation: rotateCounterClockwise 60s linear infinite;
+     z-index: 1
+ }
+
+ .circle img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 50%;
+     filter: saturate(300%);
+ }
+
+ .full-page-image {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     z-index: 1;
+     opacity: 0.6;
+     filter: saturate(300%);
+     filter: alpha(opacity=50);
+ }
+
+ .full-page-image2 {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     z-index: 2;
+     opacity: 0.4;
+     filter: saturate(200%);
+     filter: alpha(opacity=50);
+ }

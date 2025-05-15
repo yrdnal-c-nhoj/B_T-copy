@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    background-color: #0e80d8;
+    /* background-size: 100px 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: inset 0 0 200px rgb(255, 0, 221), inset 0 0 300px rgb(19, 239, 15);
+}
+
+.clock {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #111 30%, #000 100%);
+    box-shadow:
+        0 0 40px #00ffff,
+        0 0 90px #ff00ff,
+        0 0 160px #00ffff,
+        inset 0 0 30px #00ffff,
+        inset 0 0 80px #ff00ff;
+    overflow: hidden;
+    border: 6px solid #0ff;
+    filter: drop-shadow(0 0 20px #0ff) drop-shadow(0 0 30px #f0f);
+}
+
+.center {
+    width: 22px;
+    height: 22px;
+    background: radial-gradient(circle, #ff00ff, #800080);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow:
+        0 0 20px #ff00ff,
+        0 0 40px #ff00ff,
+        0 0 80px #ff00ff,
+        inset 0 0 10px #ff00ff;
+    z-index: 10;
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translateX(-50%) rotate(0deg);
+    border-radius: 10px;
+    background: currentColor;
+    box-shadow:
+        0 0 10px currentColor,
+        0 0 30px currentColor,
+        0 0 50px currentColor,
+        inset 0 0 4px #000;
+}
+
+.hour {
+    width: 10px;
+    height: 90px;
+    color: #ff0040;
+    z-index: 4;
+}
+
+.minute {
+    width: 6px;
+    height: 120px;
+    color: #00ff90;
+    z-index: 3;
+}
+
+.second {
+    width: 4px;
+    height: 140px;
+    color: #32a6c3;
+    z-index: 2;
+}
+
+.tick {
+    position: absolute;
+    width: 5px;
+    height: 12px;
+    background: #ffff00;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    border-radius: 3px;
+    box-shadow:
+        0 0 10px #ffff00,
+        0 0 20px #ffff00,
+        0 0 40px #ffff00;
+    transition: transform 5s ease, box-shadow 0.3s ease;
+}
+
+.tick.hour {
+    height: 24px;
+    width: 6px;
+    background: #ff00ff;
+    box-shadow:
+        0 0 15px #ff00ff,
+        0 0 30px #ff00ff,
+        0 0 60px #ff00ff;
+}
+
+.tick.glow {
+    transform: scale(1.8);
+    box-shadow:
+        0 0 25px #00ffff,
+        0 0 50px #00ffff,
+        0 0 100px #00ffff;
+}
+
+.number {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    color: #00ffff;
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow:
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 30px #00ffff;
+}
+
+.title-container {
+    color: #f406b0;
+    text-shadow: #06f7a6 1px 0px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 98%;
+    display: flex;
+    /* justify-content: space-between; */
+    z-index: 6;
+}
