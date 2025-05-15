@@ -1,17 +1,16 @@
 import Copyright from "./components/Copyright";
-import ListHeader from "./components/ListHeader";
+import TopNav from "./components/TopNav";
+import SpreadsheetNav from "./utils/spreadsheet";
 
-// NotFound.js
+
 function NotFound() {
     return (
         <div>
-            <LHeader />
-            <div>
-                <h1>404 - Page Not Found</h1>
-                <Copyright />
+            <TopNav />
+            <h1>The clock isn't here... But something will have to be here to stretch the stuff in the nav bar all the way across the page</h1>
 
-            </div>
-        </div>
+            <SpreadsheetNav /> </div>
+
     );
 }
 export default NotFound;

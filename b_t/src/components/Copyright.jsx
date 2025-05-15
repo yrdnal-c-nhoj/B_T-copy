@@ -1,13 +1,16 @@
-import React from 'react';
+
+import './Copyright.css'
 
 function Copyright() {
     const currentYear = new Date().getFullYear();
 
     return (
         <p className='copyright'>
-            *More Art Faster All The Time For Everyone
-            <br></br>
+
             &copy; {currentYear} Cubist Heart Laboratories. All rights reserved.
+            <br></br>
+            *MORE ART FASTER FOR EVERYBODY ALL THE TIME&nbsp;
+
         </p>
     );
 }

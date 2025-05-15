@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Oxanium:wght@200..800&display=swap');
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e8ecec;
+    background-color: rgb(21, 0, 255);
+    text-decoration: none;
+}
+
+.date-container {
+    position: fixed;
+    /* Stick to the screen */
+    bottom: 0;
+    /* Stick to the bottom */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    /* optional: space out children */
+    align-items: center;
+    /* optional: vertically align children */
+    z-index: 6;
+    padding: 5px;
+    /* optional: adds some spacing */
+    box-sizing: border-box;
+    /* ensures padding doesn't mess with width */
+}
+
+.clockname {
+    font-family: "Oxanium", serif;
+    font-weight: 400;
+    font-size: 4vh;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.dateleft {
+    font-size: 3vh;
+    font-family: "Nanum Gothic Coding", monospace;
+}
+
+.dateright {
+    font-size: 3vh;
+    font-family: "Nanum Gothic Coding", monospace;
+}

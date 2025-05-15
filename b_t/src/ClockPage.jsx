@@ -1,21 +1,16 @@
+import Copyright from "./components/Copyright";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Clock from ".pages/{}/Clock";
-import "./styles/Footer.css";
-import "./styles/Header.css";
 
 
-function ClockPage() {
+function About() {
     return (
-        <div>
-            <Header />
-            <Clock />
-            <Footer />
-        </div>
+        <>
+            <div>
+                <Header />
+
+                <Copyright />
+            </div>
+        </>
     );
-
 }
-
-export default Today;
-
-
+export default About;

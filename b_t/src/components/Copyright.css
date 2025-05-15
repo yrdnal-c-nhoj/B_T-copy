@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.copyright {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-size: clamp(0.3rem, 1.9vh, 0.9rem);
+    color: rgb(141, 131, 131);
+    text-align: right;
+    padding: 0.0rem 0.2rem;
+    /* background: rgba(255, 255, 255, 0.8); */
+    /* Optional: make it readable over other content */
+    z-index: 1000;
+    /* Ensure it stays on top */
+}

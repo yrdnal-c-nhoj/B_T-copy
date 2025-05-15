@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Nanum+Gothic+Coding&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap');
+
+.motto {
+    font-family: "Cinzel Decorative", serif;
+    font-style: normal;
+    color: rgba(102, 74, 19, 0.877);
+    font-size: 1.9vh;
+    letter-spacing: 0.3vh;
+    text-align: center;
+    /* width: 100%; */
+    background: linear-gradient(69deg, rgb(240, 227, 189) 0%, rgb(245, 242, 223) 43%, rgb(240, 227, 189) 100%);
+}
+
+.chltitle {
+    position: relative;
+    font-family: "Roboto Slab", 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: #acb3ae;
+    font-size: clamp(0.1rem, 3.0vh, 2.2rem);
+    letter-spacing: 0.15vh;
+    /* line-height: 3vh; */
+    background: linear-gradient(69deg, rgb(240, 227, 189) 0%, rgb(245, 242, 223) 43%, rgb(255, 255, 255) 100%);
+    padding: 0.2rem;
+    width: 100%;
+}
+
+/* .bttitle {
+    font-family: "Oxanium", sans-serif;
+    color: #1e044e;
+    text-shadow: #bb1a1a 2px 0 0, #b6e548 -3px 0 0;
+    font-size: clamp(2rem, 10vh, 3.0rem);
+    line-height: 11vh;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: -0.1rem;
+} */
+
+.bttitle {
+    font-family: "Oxanium", sans-serif;
+    color: #140431;
+    text-shadow: #bb1a1a 0.2vh 0vh 0px, #b6e548 -0.25vh -0.0vh 0px;
+    font-size: 9vh;
+    line-height: 8vh;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: -0.6vh;
+}
+
+.newclockeveryday {
+    font-family: "Noto Sans", sans-serif;
+    font-size: clamp(0.6rem, 1.0vh, 0.8rem);
+    line-height: 0.1rem;
+    color: #68806f;
+    letter-spacing: 0.01rem;
+    text-align: center;
+    font-style: italic;
+    background-color: #fdfefe;
+    padding: 0.3rem;
+}

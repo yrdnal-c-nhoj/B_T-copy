@@ -1,21 +1,24 @@
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import { Routes, Route } from 'react-router-dom';
-import List from './List';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Home from './Home';
 import About from './About';
-import Today from './Today';
-import NotFound from './NotFound'; // Import your error page
+import NotFound from './NotFound';
+
 
 function App() {
-    return (
-        <Routes>
-            <Route path="/" element={<List />} />
-            <Route path="/today" element={<Today />} />
-            <Route path="/about" element={<About />} />
-            {/* <Route path="clockdate/" element={<ClockPage />} /> */}
-            {/* <Route path="*" element={<NotFound />} /> Catch-all route */}
-        </Routes>
-    );
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        {/* <Route path="/clock/:date" element={<ClockPage />} /> */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
 
 export default App;

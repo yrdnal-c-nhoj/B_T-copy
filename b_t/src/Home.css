@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap');
+
+
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #bfe6e1;
+    background-color: rgb(34, 2, 20);
+    text-decoration: none;
+}
+
+
+.nav_item {
+    display: flex;
+    justify-content: flex-start;
+    /* items start from left */
+    align-items: baseline;
+    gap: 2vw;
+    padding: 1vh 2vw;
+    width: 100%;
+}
+
+/* Title aligned right inside a fixed-width container */
+.clock_title {
+    font-family: 'Oxanium', Arial, Helvetica, sans-serif;
+    font-size: 4vh;
+    width: 50vw;
+    /* fixed width or adjust as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+    /* aligns text to the right */
+}
+
+/* Date aligned left next to title */
+.clock_date {
+    font-family: 'Nanum Gothic Coding', sans-serif;
+    font-size: 4vh;
+    white-space: nowrap;
+    text-align: left;
+    width: 10vw;
+    /* fixed width for date */
+    flex-shrink: 0;
+    /* prevent shrinking */
+}
