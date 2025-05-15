@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './Home';
 import About from './About';
 import NotFound from './NotFound';
-// import ClockPage from './ClockPage';
+import ClockPage from './ClockPage';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        {/* <Route path="/clock/:date" element={<ClockPage />} /> */}
+        <Route path="/clock" element={<ClockPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

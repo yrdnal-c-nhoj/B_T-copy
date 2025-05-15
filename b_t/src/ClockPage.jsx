@@ -1,26 +1,17 @@
-import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import(`./pages/${date}/Clock.jsx`)
+// import { useParams } from "react-router-dom";
+import Header from './components/Header'
+import Footer from './components/Footer'
+// import Clock from './Clock.jsx';
 
-
-function ClockPage() {
-    const { date } = useParams(); // e.g. "25-05-15"
-    const [ClockComponent, setClockComponent] = useState(null);
-
-    useEffect(() => {
-        import(`./pages/${date}/Clock.jsx`)
-            .then((module) => setClockComponent(() => module.default))
-            .catch((error) => {
-                console.error(`No Clock.jsx found for date: ${date}`, error);
-                setClockComponent(() => () => <div>Clock not found for {date}</div>);
-            });
-    }, [date]);
+export default function ClockPage() {
+    // const { path } = useParams();
 
     return (
-        <div>
-            {ClockComponent ? <ClockComponent /> : <div>Loading clock...</div>}
-        </div>
+        <>
+            <Header />
+            <h1>lflemkm</h1>
+            <Footer />
+        </>
+
     );
 }
-
-export default ClockPage;
