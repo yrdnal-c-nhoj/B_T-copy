@@ -1,6 +1,6 @@
 import Copyright from "./components/Copyright";
 import TopNav from "./components/TopNav";
-import SpreadsheetNav from "./utils/spreadsheet";
+import SpreadsheetNav from "./utils/SpreadsheetNav";
 
 
 function NotFound() {
