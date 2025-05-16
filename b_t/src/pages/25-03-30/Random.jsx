@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './RandomColorClock.css'; // Extracted styles to external CSS if desired
 
-const RandomColorClock = () => {
+const Clock = () => {
     const hourRef = useRef(null);
     const minuteRef = useRef(null);
     const secondRef = useRef(null);
@@ -110,4 +110,4 @@ const RandomColorClock = () => {
     );
 };
 
-export default RandomColorClock;
+export default Clock;

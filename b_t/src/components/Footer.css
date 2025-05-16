@@ -15,14 +15,15 @@
     /* optional: space out children */
     align-items: center;
     /* optional: vertically align children */
-    z-index: 6;
     padding: 5px;
     /* optional: adds some spacing */
     box-sizing: border-box;
+
     /* ensures padding doesn't mess with width */
 }
 
 .clockname {
+    z-index: 50;
     font-family: "Oxanium", serif;
     font-weight: 400;
     font-size: 4vh;
