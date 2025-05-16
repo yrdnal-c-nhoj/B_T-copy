@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Nanum+Gothic+Coding&family=Oxanium:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap');
 
+
 .roulette-container {
     display: flex;
     justify-content: center;
@@ -20,6 +21,8 @@
     min-height: 200px;
     border-radius: 50%;
     position: relative;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap'); */
 
 .title-container {
-    color: #cacccb;
-    text-shadow: #82877e 1px 0;
+    color: #5f85e7;
+    text-shadow: #193038 1px 0px;
     position: absolute;
     top: 5px;
     left: 50%;
@@ -14,7 +14,7 @@
 
 .chltitle {
     font-family: "Roboto Slab", serif;
-    font-size: 2.1vh;
+    font-size: 2.8vh;
     position: absolute;
     top: 1px;
     right: 1px;
@@ -25,7 +25,8 @@
     position: relative;
     left: 0;
     font-family: "Oxanium", serif;
-    font-size: 2.7vh;
+    font-size: 2.8vh;
     font-style: italic;
+    z-index: 15;
     letter-spacing: -0.1vh;
 }

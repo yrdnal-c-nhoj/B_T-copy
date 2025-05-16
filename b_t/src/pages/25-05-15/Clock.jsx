@@ -70,14 +70,17 @@ const Clock = () => {
         <div className="roulette-container">
 
 
+            <div className='clock'>
 
+                <div style={{ backgroundImage: `url(${roulGif})` }}>
 
-            <div className="clock" id="clock" style={{ backgroundImage: `url(${roulGif})` }}></div>
-
-            <img src={roulePng} className="bgimage" alt="background" />
-            <img src={rouletteSpin} className="bgimage2" alt="background effect" />
-            <img src={rouletteSvg} className="bgimage3" alt="svg background" />
+                    <img src={roulePng} className="bgimage" alt="background" />
+                    <img src={rouletteSpin} className="bgimage2" alt="background effect" />
+                    <img src={rouletteSvg} className="bgimage3" alt="svg background" />
+                </div>
+            </div>
         </div>
+
     );
 };
 

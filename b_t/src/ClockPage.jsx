@@ -1,7 +1,7 @@
 // import { useParams } from "react-router-dom";
 import Header from './components/Header'
 import Footer from './components/Footer'
-// import Clock from './Clock.jsx';
+import Clock from './pages/25-05-15/Clock'
 
 export default function ClockPage() {
     // const { path } = useParams();
@@ -9,7 +9,7 @@ export default function ClockPage() {
     return (
         <>
             <Header />
-            <h1>lflemkm</h1>
+            <Clock />
             <Footer />
         </>
 

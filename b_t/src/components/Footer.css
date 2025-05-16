@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Oxanium:wght@200..800&display=swap');
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #e8ecec;
-    background-color: rgb(21, 0, 255);
-    text-decoration: none;
-}
 
 .date-container {
     position: fixed;
