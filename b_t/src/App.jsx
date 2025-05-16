@@ -14,13 +14,10 @@ function App() {
     <BrowserRouter>
       <Routes>
 
-        {/* <Route path="/" element={<SpreadsheetNav />} /> */}
-        {/* <Route path="/pages/:folder" element={<DynamicClockPage />} /> */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/clock" element={<ClockPage />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+        <Route path="/pages/:path" element={<ClockPage />} />
+        <Route path="*" element={<NotFound />} />  </Routes>
     </BrowserRouter>
   );
 }

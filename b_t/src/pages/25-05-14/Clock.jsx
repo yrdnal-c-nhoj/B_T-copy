@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './RoughIdea.css';
 
+
 export default function Clock() {
     useEffect(() => {
         const clock = document.getElementById("clock");
