@@ -1,33 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Nanum+Gothic+Coding&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Nanum+Gothic+Coding&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap');
 
-.title-container {
-    color: #60b7ea;
-    text-shadow: #99068d 1px 0px;
-    position: absolute;
-    top: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 98%;
-    display: flex;
-    /* justify-content: space-between; */
-    z-index: 9;
-}
-
-.chltitle {
-    font-family: "Roboto Slab", serif;
-    font-size: 2.8vh;
-    position: absolute;
-    top: 1px;
-    right: 1px;
-    letter-spacing: 0.1vh;
-}
-
-.bttitle {
+.topcontain {
     position: relative;
-    left: 0;
-    font-family: "Oxanium", serif;
-    font-size: 2.8vh;
+    top: 0;
+}
+
+
+.navmotto {
+
+    top: 0;
+    font-family: "Cinzel Decorative", serif;
+    color: rgba(129, 105, 35, 0.877);
+    font-size: clamp(0.1rem, 2.0vh, 2.2rem);
+    letter-spacing: 0.4vh;
+    /* line-height: 3.8vh; */
+    text-align: center;
+    /* background: linear-gradient(69deg, rgb(237, 210, 137) 0%, rgb(234, 231, 210) 43%, rgb(224, 206, 151) 100%); */
+}
+
+.navchltitle {
+    /* position: absolute; */
+    /* top: 0; */
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    color: #4d7a57;
+    font-size: clamp(0.1rem, 3.2vh, 2.2rem);
+    letter-spacing: 0.15vh;
+    /* background: linear-gradient(69deg, rgb(169, 207, 152) 0%, rgb(177, 188, 172) 53%, rgb(224, 206, 151) 100%); */
+    /* padding: 0.2vh; */
+}
+
+/* 
+.Ldate {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-size: clamp(0.7rem, 2vw, 1rem);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+} */
+
+.navtitle {
+    font-family: "Oxanium", sans-serif;
+    color: #1e044e;
+    text-shadow: #bb1a1a 2px 0 0, #b6e548 -2px 0 0;
+    font-size: clamp(0.1rem, 10.5vh, 8.0rem);
+    line-height: 12vh;
+    text-align: center;
     font-style: italic;
-    z-index: 15;
-    letter-spacing: -0.1vh;
+    letter-spacing: -0.5vh;
+}
+
+.navnewclockeveryday {
+    font-family: "Noto Sans", sans-serif;
+    font-size: clamp(0.5rem, 0.8vh, 0.8rem);
+    /* line-height: 0.3vh; */
+    color: #68806f;
+    letter-spacing: 0.01vh;
+    text-align: center;
+    font-style: italic;
+    /* background-color: #fdfefe; */
+    /* padding: 0.3vh; */
 }
