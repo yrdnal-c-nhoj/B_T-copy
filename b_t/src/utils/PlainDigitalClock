@@ -1,0 +1,48 @@
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+// Preload all possible Clock.jsx files from /pages/**/Clock.jsx
+const clockModules = import.meta.glob('./pages/**/Clock.jsx');
+
+export default function ClockPage() {
+const { path } = useParams();
+const [ClockComponent, setClockComponent] = useState(null);
+
+useEffect(() => {
+if (!path) return;
+
+const modulePath = `./pages/${path}/Clock.jsx`;
+const importClock = clockModules[modulePath];
+
+if (importClock) {
+importClock()
+.then((mod) => {
+if (mod && mod.default) {
+setClockComponent(() => mod.default);
+} else {
+setClockComponent(() => () => <div style={{ color: 'red' }}>Invalid component export</div>);
+}
+})
+.catch((err) => {
+console.error("Error importing clock:", err);
+setClockComponent(() => () => <div style={{ color: 'red' }}>Error loading clock</div>);
+});
+} else {
+console.warn(`No clock component found at path: ${modulePath}`);
+setClockComponent(() => () => <div style={{ color: 'orange' }}>Clock not found: {path}</div>);
+}
+}, [path]);
+
+return (
+<>
+    <Header />
+    <main style={{ padding: "2rem" }}>
+        {ClockComponent ?
+        <ClockComponent /> : <p>Loading clock...</p>}
+    </main>
+    <Footer />
+</>
+);
+}

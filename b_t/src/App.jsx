@@ -5,9 +5,6 @@ import About from './About';
 import NotFound from './NotFound';
 import ClockPage from './ClockPage';
 
-// import SpreadsheetNav from ".utils/SpreadsheetNav";
-// import DynamicClockPage from "./DynamicClockPage"; // we’ll d
-
 
 function App() {
   return (
