@@ -1,48 +1,62 @@
 import React, { useEffect } from 'react';
 import './Ants.css';
-import ants1 from './ants1.gif';
+import ants1 from './ants1.gif'
 
-const AnalogClock = () => {
+
+const Clock = () => {
     useEffect(() => {
+        const clock = document.getElementById('clock');
+        const radius = clock.offsetWidth / 2 * 0.4;
+        const centerX = clock.offsetWidth / 2;
+        const centerY = clock.offsetHeight / 2;
+
+        const importantNumbers = [12, 3, 9, 6];
+
+        importantNumbers.forEach(i => {
+            const angle = (i - 3) * (Math.PI * 2) / 12;
+            const x = centerX + radius * Math.cos(angle);
+            const y = centerY + radius * Math.sin(angle);
+
+            const numberEl = document.createElement('div');
+            numberEl.className = 'number';
+            numberEl.style.left = `${x}px`;
+            numberEl.style.top = `${y}px`;
+            numberEl.textContent = i;
+
+            clock.appendChild(numberEl);
+        });
+
         const updateClock = () => {
             const now = new Date();
-            const sec = now.getSeconds();
-            const min = now.getMinutes();
-            const hr = now.getHours();
+            const ms = now.getMilliseconds();
+            const second = now.getSeconds() + ms / 1000;
+            const minute = now.getMinutes() + second / 60;
+            const hour = now.getHours() + minute / 60;
 
-            const secDeg = sec * 6;
-            const minDeg = min * 6 + sec * 0.1;
-            const hrDeg = (hr % 12) * 30 + min * 0.5;
+            const secondDeg = second * 6;
+            const minuteDeg = minute * 6;
+            const hourDeg = (hour % 12) * 30;
 
-            document.getElementById('second').style.transform = `translate(-50%, 0) rotate(${secDeg}deg)`;
-            document.getElementById('minute').style.transform = `translate(-50%, 0) rotate(${minDeg}deg)`;
-            document.getElementById('hour').style.transform = `translate(-50%, 0) rotate(${hrDeg}deg)`;
+            document.getElementById('second').style.transform = `translateX(-50%) rotate(${secondDeg}deg)`;
+            document.getElementById('minute').style.transform = `translateX(-50%) rotate(${minuteDeg}deg)`;
+            document.getElementById('hour').style.transform = `translateX(-50%) rotate(${hourDeg}deg)`;
+
+            requestAnimationFrame(updateClock);
         };
 
-        // Generate numbers dynamically
-        const clock = document.getElementById('clock');
-        if (clock && !clock.querySelector('.number')) {
-            for (let i = 1; i <= 12; i++) {
-                const number = document.createElement('div');
-                number.className = 'number';
-                number.textContent = i;
-                const angle = (i - 3) * (Math.PI * 2) / 12;
-                const radius = 38; // percent of clock radius
-                number.style.left = 50 + radius * Math.cos(angle) + '%';
-                number.style.top = 50 + radius * Math.sin(angle) + '%';
-                clock.appendChild(number);
-            }
-        }
-
-        updateClock();
-        const interval = setInterval(updateClock, 1000);
-        return () => clearInterval(interval);
+        requestAnimationFrame(updateClock);
     }, []);
 
     return (
-        <div>
+        <div><img src={ants1} className="bgimage" />
 
-            <img src="{ants1}" className="ants1" />
+
+
+
+            <div className="date-container">
+                <a href="/" className="clockname"></a>
+            </div>
+
             <div className="clock" id="clock">
                 <div className="center"></div>
                 <div className="hand hour" id="hour"></div>
@@ -53,4 +67,4 @@ const AnalogClock = () => {
     );
 };
 
-export default AnalogClock;
+export default Clock;
