@@ -7,7 +7,7 @@ function NotFound() {
     return (
         <div>
             <TopNav />
-            <h3>The clock isn't here... But something will </h3>
+            <h3>That clock is being repaired ...</h3>
 
         </div>
 

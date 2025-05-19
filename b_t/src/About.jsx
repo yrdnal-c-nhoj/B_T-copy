@@ -6,7 +6,7 @@ function About() {
         <>
             <div>
                 <TopNav />
-                <h1>A  xfgdfj dfgfgfggjdjsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j dgjy djsd fj sftjut</h1>
+                <h1>About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About About Aboutjsdf j hdf j d xfgdfj dgjdjsd tsf hdf j djsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j d xfgdfj dgjdjsd tsf hdf j dgjy djsd fj sftjut</h1>
                 <Copyright />
             </div>
         </>
